@@ -2,9 +2,81 @@
 
 ---
 
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>gumdam: IBO info</title>
+
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+
+    <script>
+      import "./../js/index";
+    </script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <div id="Logo">
+          <p>Logo</p>
+        </div>
+        <div id="navpath">
+          <a href="#"> Gundam Frame</a>
+          <a href="#"> Characters</a>
+        </div>
+      </div>
+      <div class="main">
+        <h1> Gundam: IBO info </h1>
+        <div>
+
+        </div>
+
+      </div>
+    </div>
+  </body>
 </html>
 
+<style>
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 
-<style></style>
+  .main {
+    border: 3px solid black;
+    padding: 15px;
+    background-color: #fff;
+    width: 80%;
+    right: 0%;
+    height: fit-content;
+  }
+
+  .sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    border: 3px solid rgb(60, 3, 3);
+    background-color: #fff;
+    width: 14%;
+    height: 100%;
+  }
+  .sidebar * {
+    align-items: center;
+    border: 3px solid rgb(60, 3, 3);
+    padding: 5px;
+    display: block;
+  }
+
+  #Logo {
+    border: 3px solid rgb(60, 3, 3);
+    align-items: center;
+  }
+
+  body {
+    background-color: #ccc;
+    font-family: sans-serif;
+    padding: 10px;
+  }
 </style>
